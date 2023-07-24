@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.ios.deployment_target = '11.0'
   
-  s.source_files = "CRSQLiteFramework/**/*.{h,m}"
+  s.source_files = "**/*.{h,m}"
   s.vendored_frameworks = 'crsqlite.xcframework'
 end
