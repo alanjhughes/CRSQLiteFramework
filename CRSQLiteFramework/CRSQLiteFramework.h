@@ -12,7 +12,3 @@ FOUNDATION_EXPORT double CRSQLiteFrameworkVersionNumber;
 
 //! Project version string for CRSQLiteFramework.
 FOUNDATION_EXPORT const unsigned char CRSQLiteFrameworkVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <CRSQLiteFramework/PublicHeader.h>
-
-

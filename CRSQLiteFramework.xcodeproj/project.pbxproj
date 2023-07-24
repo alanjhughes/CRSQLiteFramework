@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		40BC8D2A2A6ED84000998108 /* CRSQLiteFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40BC8D292A6ED84000998108 /* CRSQLiteFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40BC8D312A6ED87A00998108 /* CRSQLite.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 40BC8D302A6ED87A00998108 /* CRSQLite.podspec */; };
+		40BC8D342A6ED8C800998108 /* CRSQLiteLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC8D322A6ED8C800998108 /* CRSQLiteLoader.m */; };
+		40BC8D352A6ED8C800998108 /* CRSQLiteLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 40BC8D332A6ED8C800998108 /* CRSQLiteLoader.h */; };
+		40BC8D372A6ED8CE00998108 /* crsqlite.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BC8D362A6ED8CE00998108 /* crsqlite.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40BC8D262A6ED84000998108 /* CRSQLiteFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRSQLiteFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BC8D292A6ED84000998108 /* CRSQLiteFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSQLiteFramework.h; sourceTree = "<group>"; };
+		40BC8D302A6ED87A00998108 /* CRSQLite.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CRSQLite.podspec; sourceTree = "<group>"; };
+		40BC8D322A6ED8C800998108 /* CRSQLiteLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSQLiteLoader.m; sourceTree = "<group>"; };
+		40BC8D332A6ED8C800998108 /* CRSQLiteLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSQLiteLoader.h; sourceTree = "<group>"; };
+		40BC8D362A6ED8CE00998108 /* crsqlite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = crsqlite.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BC8D372A6ED8CE00998108 /* crsqlite.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,7 +38,9 @@
 		40BC8D1C2A6ED84000998108 = {
 			isa = PBXGroup;
 			children = (
-				40BC8D282A6ED84000998108 /* CRSQLiteFramework */,
+				40BC8D302A6ED87A00998108 /* CRSQLite.podspec */,
+				40BC8D362A6ED8CE00998108 /* crsqlite.xcframework */,
+				40BC8D382A6EDC0D00998108 /* CRSQLiteFramework */,
 				40BC8D272A6ED84000998108 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,9 +53,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		40BC8D282A6ED84000998108 /* CRSQLiteFramework */ = {
+		40BC8D382A6EDC0D00998108 /* CRSQLiteFramework */ = {
 			isa = PBXGroup;
 			children = (
+				40BC8D332A6ED8C800998108 /* CRSQLiteLoader.h */,
+				40BC8D322A6ED8C800998108 /* CRSQLiteLoader.m */,
 				40BC8D292A6ED84000998108 /* CRSQLiteFramework.h */,
 			);
 			path = CRSQLiteFramework;
@@ -57,6 +70,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BC8D352A6ED8C800998108 /* CRSQLiteLoader.h in Headers */,
 				40BC8D2A2A6ED84000998108 /* CRSQLiteFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BC8D312A6ED87A00998108 /* CRSQLite.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BC8D342A6ED8C800998108 /* CRSQLiteLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +285,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,6 +297,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alanhughes.CRSQLiteFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +320,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +332,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alanhughes.CRSQLiteFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
