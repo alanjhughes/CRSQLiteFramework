@@ -40,7 +40,9 @@
 			children = (
 				40BC8D302A6ED87A00998108 /* CRSQLite.podspec */,
 				40BC8D362A6ED8CE00998108 /* crsqlite.xcframework */,
-				40BC8D382A6EDC0D00998108 /* CRSQLiteFramework */,
+				40BC8D332A6ED8C800998108 /* CRSQLiteLoader.h */,
+				40BC8D322A6ED8C800998108 /* CRSQLiteLoader.m */,
+				40BC8D292A6ED84000998108 /* CRSQLiteFramework.h */,
 				40BC8D272A6ED84000998108 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,16 +53,6 @@
 				40BC8D262A6ED84000998108 /* CRSQLiteFramework.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		40BC8D382A6EDC0D00998108 /* CRSQLiteFramework */ = {
-			isa = PBXGroup;
-			children = (
-				40BC8D332A6ED8C800998108 /* CRSQLiteLoader.h */,
-				40BC8D322A6ED8C800998108 /* CRSQLiteLoader.m */,
-				40BC8D292A6ED84000998108 /* CRSQLiteFramework.h */,
-			);
-			path = CRSQLiteFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
